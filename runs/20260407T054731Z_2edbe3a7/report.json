@@ -1,0 +1,882 @@
+{
+  "disease": "atopic dermatitis",
+  "targets": [
+    {
+      "disease": "atopic dermatitis",
+      "target_name": "JAK1",
+      "uniprot_id": "P23458",
+      "pdb_id": "6SMB",
+      "pocket_center": [
+        12.1,
+        5.4,
+        -3.2
+      ],
+      "confidence": 0.95,
+      "rationale": "Target JAK1 selected because disease match 'atopic dermatitis' shares immune/pathology context with 'atopic dermatitis', and structure 6SMB has a defined pocket suitable for small-molecule work.",
+      "source": "local_kb",
+      "metadata": {
+        "matched_disease": "atopic dermatitis",
+        "tags": [
+          "skin",
+          "inflammatory",
+          "immune",
+          "dermatitis"
+        ],
+        "box_size": [
+          20,
+          20,
+          20
+        ]
+      }
+    },
+    {
+      "disease": "atopic dermatitis",
+      "target_name": "JAK2",
+      "uniprot_id": "O60674",
+      "pdb_id": "5TQ4",
+      "pocket_center": [
+        10.3,
+        1.2,
+        2.7
+      ],
+      "confidence": 0.88,
+      "rationale": "Target JAK2 selected because disease match 'atopic dermatitis' shares immune/pathology context with 'atopic dermatitis', and structure 5TQ4 has a defined pocket suitable for small-molecule work.",
+      "source": "local_kb",
+      "metadata": {
+        "matched_disease": "atopic dermatitis",
+        "tags": [
+          "skin",
+          "inflammatory",
+          "immune",
+          "dermatitis"
+        ],
+        "box_size": [
+          20,
+          20,
+          20
+        ]
+      }
+    }
+  ],
+  "initial_leads": [
+    {
+      "smiles": "CS(=O)(=O)NCC1=CC=CC=N1",
+      "source": "fragment_recombination",
+      "score": 2.212313821959171,
+      "descriptors": {
+        "valid": 1.0,
+        "mw": 186.23600000000005,
+        "logp": 0.1307999999999998,
+        "hbd": 1.0,
+        "hba": 3.0,
+        "rot_bonds": 3.0,
+        "tpsa": 59.06,
+        "rings": 1.0,
+        "qed": 0.7296237322334582,
+        "heavy_atoms": 12.0,
+        "fsp3": 0.2857142857142857
+      },
+      "rationale": "Selected from local library using target bias and medicinal chemistry filters.",
+      "metadata": {
+        "name": "sulfonamide_core"
+      }
+    },
+    {
+      "smiles": "NCC1=NC(N)=NC(N)=N1",
+      "source": "fragment_recombination",
+      "score": 2.2118183935873112,
+      "descriptors": {
+        "valid": 1.0,
+        "mw": 140.15,
+        "logp": -1.5053,
+        "hbd": 3.0,
+        "hba": 6.0,
+        "rot_bonds": 1.0,
+        "tpsa": 116.72999999999999,
+        "rings": 1.0,
+        "qed": 0.4364722540748312,
+        "heavy_atoms": 10.0,
+        "fsp3": 0.25
+      },
+      "rationale": "Selected from local library using target bias and medicinal chemistry filters.",
+      "metadata": {
+        "name": "triazine_core"
+      }
+    },
+    {
+      "smiles": "Cc1nc(N)nc(N(c2ccccn2)S(C)(=O)=O)n1",
+      "source": "strong_generator",
+      "score": 2.2014369097608544,
+      "descriptors": {
+        "valid": 1.0,
+        "mw": 280.31300000000005,
+        "logp": 0.2549199999999998,
+        "hbd": 1.0,
+        "hba": 7.0,
+        "rot_bonds": 3.0,
+        "tpsa": 114.96,
+        "rings": 2.0,
+        "qed": 0.856572003760994,
+        "heavy_atoms": 19.0,
+        "fsp3": 0.2
+      },
+      "rationale": "Generated with BRICS recombination and analog enumeration conditioned on disease/target requirements.",
+      "metadata": {
+        "generator": "strong_local"
+      }
+    },
+    {
+      "smiles": "CCN(c1nc(C)nc(N)n1)c1nc(C)nc(N)n1",
+      "source": "strong_generator",
+      "score": 2.2002256038231973,
+      "descriptors": {
+        "valid": 1.0,
+        "mw": 261.29299999999995,
+        "logp": -0.0041600000000000525,
+        "hbd": 2.0,
+        "hba": 9.0,
+        "rot_bonds": 3.0,
+        "tpsa": 132.62,
+        "rings": 2.0,
+        "qed": 0.7821871118463727,
+        "heavy_atoms": 19.0,
+        "fsp3": 0.4
+      },
+      "rationale": "Generated with BRICS recombination and analog enumeration conditioned on disease/target requirements.",
+      "metadata": {
+        "generator": "strong_local"
+      }
+    },
+    {
+      "smiles": "CS(=O)(=O)NCCc1ccccn1",
+      "source": "strong_generator",
+      "score": 2.1857756978944822,
+      "descriptors": {
+        "valid": 1.0,
+        "mw": 200.26300000000003,
+        "logp": 0.17329999999999957,
+        "hbd": 1.0,
+        "hba": 3.0,
+        "rot_bonds": 4.0,
+        "tpsa": 59.06,
+        "rings": 1.0,
+        "qed": 0.7535680521158424,
+        "heavy_atoms": 13.0,
+        "fsp3": 0.375
+      },
+      "rationale": "Generated with BRICS recombination and analog enumeration conditioned on disease/target requirements.",
+      "metadata": {
+        "generator": "strong_local"
+      }
+    },
+    {
+      "smiles": "CCN1CCN(CC1)C1=NC(N)=NC(NC2=CC=CC=C2)=N1",
+      "source": "medchem_template",
+      "score": 2.184020449384295,
+      "descriptors": {
+        "valid": 1.0,
+        "mw": 299.382,
+        "logp": 1.3392999999999988,
+        "hbd": 2.0,
+        "hba": 7.0,
+        "rot_bonds": 4.0,
+        "tpsa": 83.2,
+        "rings": 3.0,
+        "qed": 0.8810543135658501,
+        "heavy_atoms": 22.0,
+        "fsp3": 0.4
+      },
+      "rationale": "Selected from local library using target bias and medicinal chemistry filters.",
+      "metadata": {
+        "name": "baricitinib_like"
+      }
+    }
+  ],
+  "optimized_leads": [
+    {
+      "smiles": "CC(F)S(=O)(=O)NCc1ccccn1",
+      "source": "optimized",
+      "score": 0.7955229272268868,
+      "descriptors": {
+        "valid": 1.0,
+        "mw": 218.25300000000001,
+        "logp": 0.8165,
+        "hbd": 1.0,
+        "hba": 3.0,
+        "rot_bonds": 4.0,
+        "tpsa": 59.06,
+        "rings": 1.0,
+        "qed": 0.8134170185968006,
+        "heavy_atoms": 14.0,
+        "fsp3": 0.375
+      },
+      "rationale": "Optimized over 2 rounds with docking-aware interaction analysis, analog generation, and reflection memory.",
+      "metadata": {
+        "target": "JAK1",
+        "dock": {
+          "backend": "heuristic",
+          "affinity": -7.9980840371936015,
+          "details": {
+            "reason": "Local heuristic estimate"
+          }
+        },
+        "history": [
+          {
+            "candidate": "CCS(=O)(=O)NCc1ccccn1",
+            "score": 0.760525929065144,
+            "dock": {
+              "backend": "heuristic",
+              "affinity": -7.912288312379067,
+              "details": {
+                "reason": "Local heuristic estimate"
+              }
+            }
+          },
+          {
+            "candidate": "CC(F)S(=O)(=O)NCc1ccccn1",
+            "score": 0.7955229272268868,
+            "dock": {
+              "backend": "heuristic",
+              "affinity": -7.9980840371936015,
+              "details": {
+                "reason": "Local heuristic estimate"
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "smiles": "NCCCc1nc(N)nc(N)n1",
+      "source": "optimized",
+      "score": 0.5897028940357272,
+      "descriptors": {
+        "valid": 1.0,
+        "mw": 168.204,
+        "logp": -1.0726999999999987,
+        "hbd": 3.0,
+        "hba": 6.0,
+        "rot_bonds": 3.0,
+        "tpsa": 116.72999999999999,
+        "rings": 1.0,
+        "qed": 0.5285734743629911,
+        "heavy_atoms": 12.0,
+        "fsp3": 0.5
+      },
+      "rationale": "Optimized over 2 rounds with docking-aware interaction analysis, analog generation, and reflection memory.",
+      "metadata": {
+        "target": "JAK1",
+        "dock": {
+          "backend": "heuristic",
+          "affinity": -7.472146948725983,
+          "details": {
+            "reason": "Local heuristic estimate"
+          }
+        },
+        "history": [
+          {
+            "candidate": "NCCc1nc(N)nc(N)n1",
+            "score": 0.5541738880012379,
+            "dock": {
+              "backend": "heuristic",
+              "affinity": -7.337604018309579,
+              "details": {
+                "reason": "Local heuristic estimate"
+              }
+            }
+          },
+          {
+            "candidate": "NCCCc1nc(N)nc(N)n1",
+            "score": 0.5897028940357272,
+            "dock": {
+              "backend": "heuristic",
+              "affinity": -7.472146948725983,
+              "details": {
+                "reason": "Local heuristic estimate"
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "smiles": "CCNc1nc(C)nc(N(c2ccccn2)S(C)(=O)=O)n1",
+      "source": "optimized",
+      "score": 0.8476438599066125,
+      "descriptors": {
+        "valid": 1.0,
+        "mw": 308.3670000000001,
+        "logp": 1.1045199999999997,
+        "hbd": 1.0,
+        "hba": 7.0,
+        "rot_bonds": 5.0,
+        "tpsa": 100.97000000000001,
+        "rings": 2.0,
+        "qed": 0.8822783341794203,
+        "heavy_atoms": 21.0,
+        "fsp3": 0.3333333333333333
+      },
+      "rationale": "Optimized over 2 rounds with docking-aware interaction analysis, analog generation, and reflection memory.",
+      "metadata": {
+        "target": "JAK1",
+        "dock": {
+          "backend": "heuristic",
+          "affinity": -8.121223335025507,
+          "details": {
+            "reason": "Local heuristic estimate"
+          }
+        },
+        "history": [
+          {
+            "candidate": "CNc1nc(C)nc(N(c2ccccn2)S(C)(=O)=O)n1",
+            "score": 0.8337535108972186,
+            "dock": {
+              "backend": "heuristic",
+              "affinity": -8.107176767446145,
+              "details": {
+                "reason": "Local heuristic estimate"
+              }
+            }
+          },
+          {
+            "candidate": "CCNc1nc(C)nc(N(c2ccccn2)S(C)(=O)=O)n1",
+            "score": 0.8476438599066125,
+            "dock": {
+              "backend": "heuristic",
+              "affinity": -8.121223335025507,
+              "details": {
+                "reason": "Local heuristic estimate"
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "smiles": "CCCCN(c1nc(C)nc(N)n1)c1nc(C)nc(N)n1",
+      "source": "optimized",
+      "score": 0.7992146835878662,
+      "descriptors": {
+        "valid": 1.0,
+        "mw": 289.34700000000004,
+        "logp": 0.7760399999999998,
+        "hbd": 2.0,
+        "hba": 9.0,
+        "rot_bonds": 5.0,
+        "tpsa": 132.62,
+        "rings": 2.0,
+        "qed": 0.8182584520300419,
+        "heavy_atoms": 21.0,
+        "fsp3": 0.5
+      },
+      "rationale": "Optimized over 2 rounds with docking-aware interaction analysis, analog generation, and reflection memory.",
+      "metadata": {
+        "target": "JAK1",
+        "dock": {
+          "backend": "heuristic",
+          "affinity": -8.051516904060083,
+          "details": {
+            "reason": "Local heuristic estimate"
+          }
+        },
+        "history": [
+          {
+            "candidate": "CCCN(c1nc(C)nc(N)n1)c1nc(C)nc(N)n1",
+            "score": 0.7831759727324266,
+            "dock": {
+              "backend": "heuristic",
+              "affinity": -8.022923366638123,
+              "details": {
+                "reason": "Local heuristic estimate"
+              }
+            }
+          },
+          {
+            "candidate": "CCCCN(c1nc(C)nc(N)n1)c1nc(C)nc(N)n1",
+            "score": 0.7992146835878662,
+            "dock": {
+              "backend": "heuristic",
+              "affinity": -8.051516904060083,
+              "details": {
+                "reason": "Local heuristic estimate"
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "smiles": "CS(=O)(=O)NCCC(F)c1ccccn1",
+      "source": "optimized",
+      "score": 0.811735998580629,
+      "descriptors": {
+        "valid": 1.0,
+        "mw": 232.28000000000003,
+        "logp": 1.0314999999999999,
+        "hbd": 1.0,
+        "hba": 3.0,
+        "rot_bonds": 5.0,
+        "tpsa": 59.06,
+        "rings": 1.0,
+        "qed": 0.8245476149496447,
+        "heavy_atoms": 15.0,
+        "fsp3": 0.4444444444444444
+      },
+      "rationale": "Optimized over 2 rounds with docking-aware interaction analysis, analog generation, and reflection memory.",
+      "metadata": {
+        "target": "JAK1",
+        "dock": {
+          "backend": "heuristic",
+          "affinity": -8.044650785454845,
+          "details": {
+            "reason": "Local heuristic estimate"
+          }
+        },
+        "history": [
+          {
+            "candidate": "CS(=O)(=O)NCC(F)c1ccccn1",
+            "score": 0.7856120972072496,
+            "dock": {
+              "backend": "heuristic",
+              "affinity": -7.98418949740023,
+              "details": {
+                "reason": "Local heuristic estimate"
+              }
+            }
+          },
+          {
+            "candidate": "CS(=O)(=O)NCCC(F)c1ccccn1",
+            "score": 0.811735998580629,
+            "dock": {
+              "backend": "heuristic",
+              "affinity": -8.044650785454845,
+              "details": {
+                "reason": "Local heuristic estimate"
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "smiles": "CCCCN1CCN(c2nc(N)nc(Nc3ccccc3)n2)CC1",
+      "source": "optimized",
+      "score": 0.9146454803497873,
+      "descriptors": {
+        "valid": 1.0,
+        "mw": 327.4360000000001,
+        "logp": 2.1194999999999995,
+        "hbd": 2.0,
+        "hba": 7.0,
+        "rot_bonds": 6.0,
+        "tpsa": 83.2,
+        "rings": 3.0,
+        "qed": 0.8405178254262342,
+        "heavy_atoms": 24.0,
+        "fsp3": 0.47058823529411764
+      },
+      "rationale": "Optimized over 2 rounds with docking-aware interaction analysis, analog generation, and reflection memory.",
+      "metadata": {
+        "target": "JAK1",
+        "dock": {
+          "backend": "heuristic",
+          "affinity": -8.08574153320541,
+          "details": {
+            "reason": "Local heuristic estimate"
+          }
+        },
+        "history": [
+          {
+            "candidate": "CCCN1CCN(c2nc(N)nc(Nc3ccccc3)n2)CC1",
+            "score": 0.8822961054195848,
+            "dock": {
+              "backend": "heuristic",
+              "affinity": -8.131928144702936,
+              "details": {
+                "reason": "Local heuristic estimate"
+              }
+            }
+          },
+          {
+            "candidate": "CCCCN1CCN(c2nc(N)nc(Nc3ccccc3)n2)CC1",
+            "score": 0.9146454803497873,
+            "dock": {
+              "backend": "heuristic",
+              "affinity": -8.08574153320541,
+              "details": {
+                "reason": "Local heuristic estimate"
+              }
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "evaluations": [
+    {
+      "smiles": "CCNc1nc(C)nc(N(c2ccccn2)S(C)(=O)=O)n1",
+      "docking_like_score": -8.121223335025507,
+      "docking_backend": "heuristic",
+      "qed_like_score": 0.8822783341794203,
+      "sa_like_score": 1.0,
+      "toxicity_risk": 0.311943188435248,
+      "metabolism_risk": 0.2,
+      "synthesizability_confidence": 100.0,
+      "uncertainty": 0.3468144747528138,
+      "novelty_score": 0.5714285714285714,
+      "portfolio_score": 0.8178162369123084,
+      "recommended": true,
+      "rationale": "QED-like=0.882, SA-like=1.000, toxicity=0.312, metabolism=0.200, novelty=0.571, docking=-8.121 (heuristic), uncertainty=0.347. Recommend for wet-lab prioritization.",
+      "metadata": {
+        "docking": {
+          "backend": "heuristic",
+          "affinity": -8.121223335025507,
+          "details": {
+            "reason": "Local heuristic estimate"
+          }
+        },
+        "source_metadata": {
+          "target": "JAK1",
+          "dock": {
+            "backend": "heuristic",
+            "affinity": -8.121223335025507,
+            "details": {
+              "reason": "Local heuristic estimate"
+            }
+          },
+          "history": [
+            {
+              "candidate": "CNc1nc(C)nc(N(c2ccccn2)S(C)(=O)=O)n1",
+              "score": 0.8337535108972186,
+              "dock": {
+                "backend": "heuristic",
+                "affinity": -8.107176767446145,
+                "details": {
+                  "reason": "Local heuristic estimate"
+                }
+              }
+            },
+            {
+              "candidate": "CCNc1nc(C)nc(N(c2ccccn2)S(C)(=O)=O)n1",
+              "score": 0.8476438599066125,
+              "dock": {
+                "backend": "heuristic",
+                "affinity": -8.121223335025507,
+                "details": {
+                  "reason": "Local heuristic estimate"
+                }
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "smiles": "CCCCN(c1nc(C)nc(N)n1)c1nc(C)nc(N)n1",
+      "docking_like_score": -8.051516904060083,
+      "docking_backend": "heuristic",
+      "qed_like_score": 0.8182584520300419,
+      "sa_like_score": 1.0,
+      "toxicity_risk": 0.3408620454315291,
+      "metabolism_risk": 0.2,
+      "synthesizability_confidence": 100.0,
+      "uncertainty": 0.3300189496318946,
+      "novelty_score": 0.7678571428571428,
+      "portfolio_score": 0.815681755242819,
+      "recommended": true,
+      "rationale": "QED-like=0.818, SA-like=1.000, toxicity=0.341, metabolism=0.200, novelty=0.768, docking=-8.052 (heuristic), uncertainty=0.330. Recommend for wet-lab prioritization.",
+      "metadata": {
+        "docking": {
+          "backend": "heuristic",
+          "affinity": -8.051516904060083,
+          "details": {
+            "reason": "Local heuristic estimate"
+          }
+        },
+        "source_metadata": {
+          "target": "JAK1",
+          "dock": {
+            "backend": "heuristic",
+            "affinity": -8.051516904060083,
+            "details": {
+              "reason": "Local heuristic estimate"
+            }
+          },
+          "history": [
+            {
+              "candidate": "CCCN(c1nc(C)nc(N)n1)c1nc(C)nc(N)n1",
+              "score": 0.7831759727324266,
+              "dock": {
+                "backend": "heuristic",
+                "affinity": -8.022923366638123,
+                "details": {
+                  "reason": "Local heuristic estimate"
+                }
+              }
+            },
+            {
+              "candidate": "CCCCN(c1nc(C)nc(N)n1)c1nc(C)nc(N)n1",
+              "score": 0.7992146835878662,
+              "dock": {
+                "backend": "heuristic",
+                "affinity": -8.051516904060083,
+                "details": {
+                  "reason": "Local heuristic estimate"
+                }
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "smiles": "CS(=O)(=O)NCCC(F)c1ccccn1",
+      "docking_like_score": -8.044650785454845,
+      "docking_backend": "heuristic",
+      "qed_like_score": 0.8245476149496447,
+      "sa_like_score": 1.0,
+      "toxicity_risk": 0.30223015375566803,
+      "metabolism_risk": 0.2,
+      "synthesizability_confidence": 100.0,
+      "uncertainty": 0.3449567474068461,
+      "novelty_score": 0.4444444444444444,
+      "portfolio_score": 0.7906492178237272,
+      "recommended": true,
+      "rationale": "QED-like=0.825, SA-like=1.000, toxicity=0.302, metabolism=0.200, novelty=0.444, docking=-8.045 (heuristic), uncertainty=0.345. Recommend for wet-lab prioritization.",
+      "metadata": {
+        "docking": {
+          "backend": "heuristic",
+          "affinity": -8.044650785454845,
+          "details": {
+            "reason": "Local heuristic estimate"
+          }
+        },
+        "source_metadata": {
+          "target": "JAK1",
+          "dock": {
+            "backend": "heuristic",
+            "affinity": -8.044650785454845,
+            "details": {
+              "reason": "Local heuristic estimate"
+            }
+          },
+          "history": [
+            {
+              "candidate": "CS(=O)(=O)NCC(F)c1ccccn1",
+              "score": 0.7856120972072496,
+              "dock": {
+                "backend": "heuristic",
+                "affinity": -7.98418949740023,
+                "details": {
+                  "reason": "Local heuristic estimate"
+                }
+              }
+            },
+            {
+              "candidate": "CS(=O)(=O)NCCC(F)c1ccccn1",
+              "score": 0.811735998580629,
+              "dock": {
+                "backend": "heuristic",
+                "affinity": -8.044650785454845,
+                "details": {
+                  "reason": "Local heuristic estimate"
+                }
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "smiles": "CC(F)S(=O)(=O)NCc1ccccn1",
+      "docking_like_score": -7.9980840371936015,
+      "docking_backend": "heuristic",
+      "qed_like_score": 0.8134170185968006,
+      "sa_like_score": 1.0,
+      "toxicity_risk": 0.3082345062705467,
+      "metabolism_risk": 0.2,
+      "synthesizability_confidence": 100.0,
+      "uncertainty": 0.3390625002813014,
+      "novelty_score": 0.40476190476190477,
+      "portfolio_score": 0.7820659599068412,
+      "recommended": true,
+      "rationale": "QED-like=0.813, SA-like=1.000, toxicity=0.308, metabolism=0.200, novelty=0.405, docking=-7.998 (heuristic), uncertainty=0.339. Recommend for wet-lab prioritization.",
+      "metadata": {
+        "docking": {
+          "backend": "heuristic",
+          "affinity": -7.9980840371936015,
+          "details": {
+            "reason": "Local heuristic estimate"
+          }
+        },
+        "source_metadata": {
+          "target": "JAK1",
+          "dock": {
+            "backend": "heuristic",
+            "affinity": -7.9980840371936015,
+            "details": {
+              "reason": "Local heuristic estimate"
+            }
+          },
+          "history": [
+            {
+              "candidate": "CCS(=O)(=O)NCc1ccccn1",
+              "score": 0.760525929065144,
+              "dock": {
+                "backend": "heuristic",
+                "affinity": -7.912288312379067,
+                "details": {
+                  "reason": "Local heuristic estimate"
+                }
+              }
+            },
+            {
+              "candidate": "CC(F)S(=O)(=O)NCc1ccccn1",
+              "score": 0.7955229272268868,
+              "dock": {
+                "backend": "heuristic",
+                "affinity": -7.9980840371936015,
+                "details": {
+                  "reason": "Local heuristic estimate"
+                }
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "smiles": "NCCCc1nc(N)nc(N)n1",
+      "docking_like_score": -7.472146948725983,
+      "docking_backend": "heuristic",
+      "qed_like_score": 0.5285734743629911,
+      "sa_like_score": 1.0,
+      "toxicity_risk": 0.326022861813187,
+      "metabolism_risk": 0.2,
+      "synthesizability_confidence": 100.0,
+      "uncertainty": 0.2925018764291739,
+      "novelty_score": 0.8269230769230769,
+      "portfolio_score": 0.7399801035247893,
+      "recommended": true,
+      "rationale": "QED-like=0.529, SA-like=1.000, toxicity=0.326, metabolism=0.200, novelty=0.827, docking=-7.472 (heuristic), uncertainty=0.293. Recommend for wet-lab prioritization.",
+      "metadata": {
+        "docking": {
+          "backend": "heuristic",
+          "affinity": -7.472146948725983,
+          "details": {
+            "reason": "Local heuristic estimate"
+          }
+        },
+        "source_metadata": {
+          "target": "JAK1",
+          "dock": {
+            "backend": "heuristic",
+            "affinity": -7.472146948725983,
+            "details": {
+              "reason": "Local heuristic estimate"
+            }
+          },
+          "history": [
+            {
+              "candidate": "NCCc1nc(N)nc(N)n1",
+              "score": 0.5541738880012379,
+              "dock": {
+                "backend": "heuristic",
+                "affinity": -7.337604018309579,
+                "details": {
+                  "reason": "Local heuristic estimate"
+                }
+              }
+            },
+            {
+              "candidate": "NCCCc1nc(N)nc(N)n1",
+              "score": 0.5897028940357272,
+              "dock": {
+                "backend": "heuristic",
+                "affinity": -7.472146948725983,
+                "details": {
+                  "reason": "Local heuristic estimate"
+                }
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "smiles": "CCCCN1CCN(c2nc(N)nc(Nc3ccccc3)n2)CC1",
+      "docking_like_score": -8.08574153320541,
+      "docking_backend": "heuristic",
+      "qed_like_score": 0.8405178254262342,
+      "sa_like_score": 1.0,
+      "toxicity_risk": 0.37281797479654916,
+      "metabolism_risk": 0.35,
+      "synthesizability_confidence": 100.0,
+      "uncertainty": 0.31980342507178605,
+      "novelty_score": 0.0,
+      "portfolio_score": 0.7252795194682901,
+      "recommended": true,
+      "rationale": "QED-like=0.841, SA-like=1.000, toxicity=0.373, metabolism=0.350, novelty=0.000, docking=-8.086 (heuristic), uncertainty=0.320. Recommend for wet-lab prioritization.",
+      "metadata": {
+        "docking": {
+          "backend": "heuristic",
+          "affinity": -8.08574153320541,
+          "details": {
+            "reason": "Local heuristic estimate"
+          }
+        },
+        "source_metadata": {
+          "target": "JAK1",
+          "dock": {
+            "backend": "heuristic",
+            "affinity": -8.08574153320541,
+            "details": {
+              "reason": "Local heuristic estimate"
+            }
+          },
+          "history": [
+            {
+              "candidate": "CCCN1CCN(c2nc(N)nc(Nc3ccccc3)n2)CC1",
+              "score": 0.8822961054195848,
+              "dock": {
+                "backend": "heuristic",
+                "affinity": -8.131928144702936,
+                "details": {
+                  "reason": "Local heuristic estimate"
+                }
+              }
+            },
+            {
+              "candidate": "CCCCN1CCN(c2nc(N)nc(Nc3ccccc3)n2)CC1",
+              "score": 0.9146454803497873,
+              "dock": {
+                "backend": "heuristic",
+                "affinity": -8.08574153320541,
+                "details": {
+                  "reason": "Local heuristic estimate"
+                }
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "final_report": "\nPharmAgents Working Project Report\n=================================\nDisease: atopic dermatitis\n\nSelected Targets\n----------------\n- JAK1 (P23458, 6SMB) confidence=0.95 source=local_kb\n- JAK2 (O60674, 5TQ4) confidence=0.88 source=local_kb\n\nTop Molecules After Optimization + PCC Evaluation\n-------------------------------------------------\n- CCNc1nc(C)nc(N(c2ccccn2)S(C)(=O)=O)n1 | portfolio=0.818 | docking=-8.121 (heuristic) | tox=0.312 | SA=1.000 | novelty=0.571 | recommended=True\n- CCCCN(c1nc(C)nc(N)n1)c1nc(C)nc(N)n1 | portfolio=0.816 | docking=-8.052 (heuristic) | tox=0.341 | SA=1.000 | novelty=0.768 | recommended=True\n- CS(=O)(=O)NCCC(F)c1ccccn1 | portfolio=0.791 | docking=-8.045 (heuristic) | tox=0.302 | SA=1.000 | novelty=0.444 | recommended=True\n- CC(F)S(=O)(=O)NCc1ccccn1 | portfolio=0.782 | docking=-7.998 (heuristic) | tox=0.308 | SA=1.000 | novelty=0.405 | recommended=True\n- NCCCc1nc(N)nc(N)n1 | portfolio=0.740 | docking=-7.472 (heuristic) | tox=0.326 | SA=1.000 | novelty=0.827 | recommended=True\n\nExtension Beyond Paper\n----------------------\nuncertainty-aware active-learning prioritization and portfolio-diverse ranking\nTop active-learning candidates: CCNc1nc(C)nc(N(c2ccccn2)S(C)(=O)=O)n1, CCCCN(c1nc(C)nc(N)n1)c1nc(C)nc(N)n1, CS(=O)(=O)NCCC(F)c1ccccn1, CC(F)S(=O)(=O)NCc1ccccn1, NCCCc1nc(N)nc(N)n1\nRecommended count: 6\nDocking backend used: heuristic\nPrepared receptor path: None\nDownloaded PDB path: None\n",
+  "extension_summary": {
+    "paper_extension": "uncertainty-aware active-learning prioritization and portfolio-diverse ranking",
+    "top_active_learning_candidates": [
+      "CCNc1nc(C)nc(N(c2ccccn2)S(C)(=O)=O)n1",
+      "CCCCN(c1nc(C)nc(N)n1)c1nc(C)nc(N)n1",
+      "CS(=O)(=O)NCCC(F)c1ccccn1",
+      "CC(F)S(=O)(=O)NCc1ccccn1",
+      "NCCCc1nc(N)nc(N)n1"
+    ],
+    "recommended_count": 6,
+    "docking_backend_used": "heuristic",
+    "prepared_receptor_path": null,
+    "downloaded_pdb_path": null
+  },
+  "run_id": "20260407T054731Z_2edbe3a7",
+  "artifacts": {}
+}

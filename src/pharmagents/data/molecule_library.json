@@ -1,0 +1,149 @@
+{
+  "molecules": [
+    {
+      "name": "tofacitinib_like",
+      "smiles": "CC1=NC(N)=NC(NCC2=CC=CC=C2)=N1",
+      "source": "virtual_screening",
+      "affinity_prior": 0.82,
+      "target_bias": {
+        "JAK1": 0.92,
+        "JAK2": 0.78,
+        "JAK3": 0.83
+      }
+    },
+    {
+      "name": "baricitinib_like",
+      "smiles": "CCN1CCN(CC1)C1=NC(N)=NC(NC2=CC=CC=C2)=N1",
+      "source": "medchem_template",
+      "affinity_prior": 0.8,
+      "target_bias": {
+        "JAK1": 0.88,
+        "JAK2": 0.82
+      }
+    },
+    {
+      "name": "pyridine_urea_1",
+      "smiles": "NC(=O)NC1=CC=NC=C1",
+      "source": "fragment_recombination",
+      "affinity_prior": 0.58,
+      "target_bias": {
+        "JAK1": 0.61,
+        "JAK3": 0.56
+      }
+    },
+    {
+      "name": "benzimidazole_1",
+      "smiles": "CCOC1=NC2=CC=CC=C2N1",
+      "source": "fragment_recombination",
+      "affinity_prior": 0.6,
+      "target_bias": {
+        "JAK1": 0.66
+      }
+    },
+    {
+      "name": "indazole_amide",
+      "smiles": "CC1=NN(C)C2=CC=CC=C12C(=O)NCC",
+      "source": "medchem_template",
+      "affinity_prior": 0.69,
+      "target_bias": {
+        "JAK1": 0.74,
+        "JAK2": 0.67
+      }
+    },
+    {
+      "name": "quinazoline_amine",
+      "smiles": "COC1=NC=NC2=CC=CC=C12NCC",
+      "source": "virtual_screening",
+      "affinity_prior": 0.71,
+      "target_bias": {
+        "JAK1": 0.72,
+        "IL4R": 0.42
+      }
+    },
+    {
+      "name": "spiro_small_1",
+      "smiles": "CCN1CC2(CC1)CCNC2",
+      "source": "fragment_recombination",
+      "affinity_prior": 0.49,
+      "target_bias": {
+        "JAK3": 0.63
+      }
+    },
+    {
+      "name": "piperazine_amide",
+      "smiles": "CCN1CCN(CC1)C(=O)C2=CC=CC=N2",
+      "source": "medchem_template",
+      "affinity_prior": 0.67,
+      "target_bias": {
+        "JAK1": 0.71
+      }
+    },
+    {
+      "name": "triazine_core",
+      "smiles": "NCC1=NC(N)=NC(N)=N1",
+      "source": "fragment_recombination",
+      "affinity_prior": 0.57,
+      "target_bias": {
+        "JAK2": 0.65
+      }
+    },
+    {
+      "name": "lipophilic_ring",
+      "smiles": "CCOC1=CC=CC=C1C(=O)NCC2=CC=CC=C2",
+      "source": "virtual_screening",
+      "affinity_prior": 0.62,
+      "target_bias": {
+        "IL4R": 0.51,
+        "TNF": 0.59
+      }
+    },
+    {
+      "name": "bbb_candidate_1",
+      "smiles": "CN1CCC(CC1)NC(=O)C2=CC=NC=C2",
+      "source": "medchem_template",
+      "affinity_prior": 0.68,
+      "target_bias": {
+        "LRRK2": 0.7,
+        "MAOB": 0.72
+      }
+    },
+    {
+      "name": "brain_heterocycle",
+      "smiles": "CCN(CC)C1=NC2=CC=CC=C2N=C1N",
+      "source": "virtual_screening",
+      "affinity_prior": 0.66,
+      "target_bias": {
+        "LRRK2": 0.69
+      }
+    },
+    {
+      "name": "sulfonamide_core",
+      "smiles": "CS(=O)(=O)NCC1=CC=CC=N1",
+      "source": "fragment_recombination",
+      "affinity_prior": 0.63,
+      "target_bias": {
+        "JAK2": 0.64,
+        "JAK1": 0.61
+      }
+    },
+    {
+      "name": "urea_ring_2",
+      "smiles": "NC(=O)NCC1=CC=CC=C1F",
+      "source": "virtual_screening",
+      "affinity_prior": 0.54,
+      "target_bias": {
+        "JAK1": 0.55
+      }
+    },
+    {
+      "name": "aza_indole",
+      "smiles": "CCNC1=NC2=CC=CN=C2N1",
+      "source": "medchem_template",
+      "affinity_prior": 0.72,
+      "target_bias": {
+        "JAK1": 0.79,
+        "JAK3": 0.7
+      }
+    }
+  ]
+}

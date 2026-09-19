@@ -1,0 +1,64 @@
+{
+  "records": [
+    {
+      "smiles": "CC1=NC(N)=NC(NCC2=CC=CC=C2)=N1",
+      "risk": 0.36
+    },
+    {
+      "smiles": "CCN1CCN(CC1)C1=NC(N)=NC(NC2=CC=CC=C2)=N1",
+      "risk": 0.42
+    },
+    {
+      "smiles": "NC(=O)NC1=CC=NC=C1",
+      "risk": 0.28
+    },
+    {
+      "smiles": "CCOC1=NC2=CC=CC=C2N1",
+      "risk": 0.31
+    },
+    {
+      "smiles": "CC1=NN(C)C2=CC=CC=C12C(=O)NCC",
+      "risk": 0.39
+    },
+    {
+      "smiles": "COC1=NC=NC2=CC=CC=C12NCC",
+      "risk": 0.34
+    },
+    {
+      "smiles": "CCN1CC2(CC1)CCNC2",
+      "risk": 0.24
+    },
+    {
+      "smiles": "CCN1CCN(CC1)C(=O)C2=CC=CC=N2",
+      "risk": 0.33
+    },
+    {
+      "smiles": "NCC1=NC(N)=NC(N)=N1",
+      "risk": 0.29
+    },
+    {
+      "smiles": "CCOC1=CC=CC=C1C(=O)NCC2=CC=CC=C2",
+      "risk": 0.47
+    },
+    {
+      "smiles": "CN1CCC(CC1)NC(=O)C2=CC=NC=C2",
+      "risk": 0.3
+    },
+    {
+      "smiles": "CCN(CC)C1=NC2=CC=CC=C2N=C1N",
+      "risk": 0.32
+    },
+    {
+      "smiles": "CS(=O)(=O)NCC1=CC=CC=N1",
+      "risk": 0.26
+    },
+    {
+      "smiles": "NC(=O)NCC1=CC=CC=C1F",
+      "risk": 0.27
+    },
+    {
+      "smiles": "CCNC1=NC2=CC=CN=C2N1",
+      "risk": 0.31
+    }
+  ]
+}
